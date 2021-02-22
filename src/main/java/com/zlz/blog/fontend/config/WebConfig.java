@@ -15,12 +15,14 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addInterceptor(new BlogUserInterceptor()).addPathPatterns("/**")
                 .excludePathPatterns("static/**")
                 .excludePathPatterns("/index")
-                .excludePathPatterns("/empty")
-                .excludePathPatterns("/home")
-                .excludePathPatterns("/classify")
-                .excludePathPatterns("/time")
-                .excludePathPatterns("/website")
-                .excludePathPatterns("/aboutme")
-                .excludePathPatterns("/detail");
+                .excludePathPatterns("/login")
+                .excludePathPatterns("/index/index")
+                .excludePathPatterns("/user/basicuserinfo")
+                .excludePathPatterns("/user/safetyinfo")
+                .excludePathPatterns("/blog/bloglist")
+                .excludePathPatterns("/blog/typemanage")
+                .excludePathPatterns("/write/write")
+                .excludePathPatterns("/write/recycle")
+                .excludePathPatterns("/webinfo");
     }
 }
