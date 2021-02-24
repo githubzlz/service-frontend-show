@@ -31,7 +31,7 @@ public class BlogUserInterceptor extends HandlerInterceptorAdapter {
             }
         }
         logger.info("重定向");
-        response.sendRedirect("/index");
+        response.sendRedirect("/");
         return true;
     }
 }
