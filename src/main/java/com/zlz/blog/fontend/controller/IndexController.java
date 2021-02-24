@@ -21,7 +21,8 @@ public class IndexController {
      * 添加angular的所有路由
      * @return
      */
-    @RequestMapping(value = {"/index", "/empty","/home","/classify","/time","/website","/about","/detail","/about"})
+    @RequestMapping(value = {"/login","/index", "/index/index","/user/basicuserinfo","/user/safetyinfo",
+            "/blog/bloglist","/blog/typemanage","/write/write","/write/recycle","/webinfo"})
     public String getIndex(){
         return "/index.html";
     }
