@@ -1,0 +1,77 @@
+/*全局样式*/
+@font-face {
+    font-family: test_zlz;
+    src: url("../../assets/font.ttf");
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: top;
+}
+html,body,#app{
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    min-width: 300px;
+    background-color: rgba(244,244,244,0.85);
+    max-width: 1960px;
+}
+img{
+    object-fit: cover;
+}
+/*---滚动条整体样式--*/
+::-webkit-scrollbar{
+    width: 6px;
+    height: 20px;
+}
+/*---滑块部分--*/
+::-webkit-scrollbar-thumb{
+    background-color: #88d4f5;
+}
+/*---轨道部分--*/
+::-webkit-scrollbar-track-piece{
+    background-color: rgba(0,0,0,0);
+}
+/*---滚动条方向按钮--*/
+::-webkit-scrollbar-button {
+    display: none;
+}
+/*---滚动条下方空白--*/
+::-webkit-scrollbar-track {
+}
+/* 可滚动元素的底角*/
+::-webkit-scrollbar-corner {
+    display: none;
+}
+/* 可拖动调整大小手柄 */
+::-webkit-resizer {
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.big{
+    flex: 8;
+}
+.small{
+    flex: 3;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+    padding: 10px;
+}
+.cardTwo{
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.under_line{
+    height: 5px;
+    margin: 10px 0;
+    background-color: #3aa047;
+}
